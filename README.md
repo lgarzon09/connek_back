@@ -9,3 +9,10 @@ ConnekBack is a RESTful group of services for Connek.
 # Robert Alejandro Perea Nuñez
 ```
 
+# Architecture
+```
+1. Provisioning:  Db mapping.
+2. Models: Data structure.
+3. Routers: CRUD services. 
+```
+
