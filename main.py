@@ -2,6 +2,8 @@ from fastapi                    import Depends, FastAPI
 from fastapi.middleware.cors    import CORSMiddleware
 
 from routers.users_router       import router as router_users
+from routers.people_router       import router as router_people
+from routers.companies_router       import router as router_companies
 
 api = FastAPI()
 origins = [
@@ -18,3 +20,5 @@ async def hello():
     return "Bienvenidos a Connek. Esta es una prueba de conexión"
 
 api.include_router(router_users)
+api.include_router(router_people)
+api.include_router(router_companies)
