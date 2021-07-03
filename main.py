@@ -3,7 +3,9 @@ from fastapi.middleware.cors    import CORSMiddleware
 
 from routers.users_router       import router as router_users
 from routers.people_router       import router as router_people
-from routers.companies_router       import router as router_companies
+from routers.companies_router    import router as router_companies
+from routers.projects_router    import router as router_projects
+from routers.members_router    import router as router_members
 
 api = FastAPI()
 origins = [
@@ -22,3 +24,5 @@ async def hello():
 api.include_router(router_users)
 api.include_router(router_people)
 api.include_router(router_companies)
+api.include_router(router_projects)
+api.include_router(router_members)
