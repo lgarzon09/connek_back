@@ -1,0 +1,8 @@
+{
+    "db_user"   : "postgres",
+    "db_psswrd" : "Zeusytoby99",
+    "db_host"   : "localhost",
+    "db_port"   : "5432",
+    "db_name"   : "connek_db",
+    "db_schema" : "connek"
+}
